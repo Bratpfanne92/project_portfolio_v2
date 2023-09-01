@@ -27,7 +27,7 @@
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: var(--p-color-3);
+  background: var(--p-color-5);
   justify-content: space-between;
   align-items: center;
   z-index: 99;
@@ -53,4 +53,57 @@
 }
 .navbar a.always-on {
   color: var(--p-color-4);
+}
+
+/* ------Main----- */
+.welcome {
+  height: 100vh;
+  background: linear-gradient(
+    -90deg,
+    var(--p-color-5) 65%,
+    var(--p-color-wh) 35%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+.welcome-content {
+  max-width: 600px;
+  color: var(--p-color-wh);
+  text-align: right;
+}
+.welcome-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.welcome-content h2 {
+  font-size: 1.8rem;
+  color: var(--p-color-4);
+  -webkit-text-stroke: 0.5px var(--p-color-wh);
+}
+.welcome-content p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+/* Welcome Icons */
+.welcome-social a[target="_blank"] {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid var(--p-color-wh);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: var(--p-color-4);
+  text-decoration: none;
+  margin-left: 12px;
+}
+/* Welcome-Img */
+.welcome-img {
+  width: 500px;
+  height: 200px;
+  background: var(--p-color-2);
 }
