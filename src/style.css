@@ -1,0 +1,19 @@
+/* --------CSS Reset---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  /*------- Colors --------- */
+  --bg-visibility: rgba(248, 242, 234, 0.698);
+  --p-color-1: #363636;
+  --p-color-hover1: rgba(225, 225, 225, 0.81);
+  --p-color-2: #4f8ac0;
+  --p-color-3: #0369c9;
+  --p-color-4: #53d7ff;
+  --p-color-5: #002958;
+}
+
+/* -----body ------ */
