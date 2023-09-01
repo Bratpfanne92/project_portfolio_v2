@@ -45,6 +45,7 @@
   text-decoration: none;
   font-weight: 600;
   margin-left: 35px;
+  transition: 0.3s;
   &:hover {
     color: var(--p-color-4);
   }
