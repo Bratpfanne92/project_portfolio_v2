@@ -50,3 +50,6 @@
     color: var(--p-color-4);
   }
 }
+.navbar a.always-on {
+  color: var(--p-color-4);
+}
