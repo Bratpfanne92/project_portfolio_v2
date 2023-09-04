@@ -243,7 +243,7 @@ body {
   border-radius: 25px;
   background: url(/project_portfolio_v2/images/about_1.jpg) no-repeat center
     top/ cover;
-  animation: animatedGallery 10s linear infinite;
+  animation: animatedGallery 20s linear infinite;
 }
 @keyframes animatedGallery {
   0%,
