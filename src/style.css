@@ -87,6 +87,9 @@
   margin-top: 20px;
 }
 /* Welcome Icons */
+.welcome-social {
+  margin: 25px 0 40px;
+}
 .welcome-social a[target="_blank"] {
   display: inline-flex;
   justify-content: center;
