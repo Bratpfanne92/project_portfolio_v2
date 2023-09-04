@@ -115,6 +115,14 @@ body {
   margin-top: 20px;
 }
 /* Welcome Icons */
+/* footer {
+  width: 100%;
+  height: 100px;
+  background-color: var(--p-color-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 .welcome-social {
   margin: 25px 0 40px;
 }
@@ -143,15 +151,16 @@ body {
 }
 /* Welcome-Img */
 .welcome-img {
+  /* position: relative; */
   width: 380px;
   height: 200px;
-  background: var(--p-color-1);
+  background: var(--p-color-5);
   border-radius: 50%;
   border: 25px solid var(--p-color-wh);
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 25px solid var(--p-color-1);
+  outline: 25px solid var(--p-color-5);
 }
 .welcome-img img {
   /* position: relative; */
@@ -164,6 +173,7 @@ body {
 
 /* Download Button----------- */
 .btn {
+  margin-top: 50px;
   padding: 12px 35px;
   background: var(--p-color-4);
   border-radius: 45px;
