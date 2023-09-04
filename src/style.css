@@ -46,6 +46,7 @@
   text-decoration: none;
   font-weight: 600;
   margin-left: 35px;
+  /* Navbar-Animation---------- */
   transition: 0.3s;
   &:hover {
     color: var(--p-color-4);
@@ -97,12 +98,19 @@
   width: 30px;
   height: 30px;
   background: transparent;
-  border: 2px solid var(--p-color-wh);
+  border: 2px solid var(--p-color-4);
   border-radius: 50%;
   font-size: 1.2rem;
   color: var(--p-color-4);
   text-decoration: none;
   margin-left: 12px;
+  /* Hover-Animation----------- */
+  transition: 0.5s;
+  &:hover {
+    background-color: var(--p-color-4);
+    color: var(--p-color-wh);
+    border-color: var(--p-color-wh);
+  }
 }
 /* Welcome-Img */
 .welcome-img {
