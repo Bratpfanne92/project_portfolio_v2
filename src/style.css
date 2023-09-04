@@ -21,7 +21,7 @@
 /* -----body ------ */
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 /* HEADER */
 .header {
@@ -32,16 +32,15 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 20px 5%;
   background: var(--p-color-5);
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
 }
 
 .logo {
   font-size: 1.5rem;
-  color: var(--p-color-1);
+  color: var(--p-color-4);
   text-decoration: none;
   font-weight: 800;
 }
@@ -67,18 +66,20 @@ body {
 .welcome {
   letter-spacing: 0.7px;
   height: 100vh;
+  width: 100%;
   background: linear-gradient(
     -90deg,
-    var(--p-color-5) 65%,
-    var(--p-color-wh) 35%
+    var(--p-color-5) 75%,
+    var(--p-color-wh) 25%
   );
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 15%;
 }
 .welcome-content {
-  max-width: 600px;
+  max-width: 300px;
   color: var(--p-color-wh);
   text-align: right;
 }
@@ -86,24 +87,23 @@ body {
   font-size: 3rem;
   line-height: 1.2;
 }
-.welcome-content h2 {
-  font-size: 1.8rem;
-  /* Outline Border für h2 */
+.welcome-content h3 {
+  font-size: 1.5rem;
+  /* Outline Border für h3 */
   color: transparent;
   -webkit-text-stroke: 0.5px var(--p-color-wh);
-  /* Animation setup ffür h2 */
+  /* Animation setup ffür h3 */
   background-image: linear-gradient(var(--p-color-4), var(--p-color-4));
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: -206px 0;
-  animation: animatedH2 6s linear infinite;
+  animation: animatedH3 6s linear infinite;
 }
-/* animation für h2 */
-@keyframes animatedH2 {
+/* animation für h3 */
+@keyframes animatedH3 {
   0%,
-  95%,
   100% {
-    background-position: -206px 0;
+    background-position: -200px 0;
   }
   65%,
   85% {
@@ -111,24 +111,20 @@ body {
   }
 }
 .welcome-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 20px;
 }
 /* Welcome Icons */
-/* footer {
-  width: 100%;
-  height: 100px;
+/* .footer {
   background-color: var(--p-color-5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 } */
 .welcome-social {
-  margin: 25px 0 40px;
+  margin-bottom: 30px;
 }
 /* Welcome-Icons-RefferenzLink */
 .welcome-social a[target="_blank"] {
   display: inline-flex;
+
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -140,6 +136,7 @@ body {
   color: var(--p-color-4);
   text-decoration: none;
   margin-left: 12px;
+  margin-top: 10px;
   /* Social Icons Hover-Animation----------- */
   transition: 0.5s;
   &:hover {
@@ -152,31 +149,37 @@ body {
 /* Welcome-Img */
 .welcome-img {
   /* position: relative; */
-  width: 380px;
-  height: 200px;
+  /* float: left; */
+
+  min-width: 180px;
+  min-height: 180px;
   background: var(--p-color-5);
+  background-image: url(../images/profil.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 50%;
-  border: 25px solid var(--p-color-wh);
+  border: 10px solid var(--p-color-wh);
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 25px solid var(--p-color-5);
+  outline: 20px solid var(--p-color-5);
 }
-.welcome-img img {
+/* .welcome-img img {
   /* position: relative; */
-
-  max-width: 100%;
-  max-height: 100%;
-  /* bottom: 22px; */
-  border-radius: 50%;
-}
+/* max-width: 380px; */
+/* max-height: 200px; */
+/* max-height: 200px; */
+/* bottom: 22px; */
+/* border-radius: 50%; */
+/* } */
 
 /* Download Button----------- */
 .btn {
-  margin-top: 50px;
-  padding: 12px 35px;
+  margin-bottom: 50px;
+  padding: 10px 15px;
   background: var(--p-color-4);
-  border-radius: 45px;
+  border-radius: 20px;
   font-size: 1.3rem;
   text-decoration: none;
   color: var(--p-color-wh);
@@ -189,5 +192,32 @@ body {
     box-shadow: none;
     color: var(--p-color-4);
     background: var(--p-color-wh);
+  }
+}
+@media (max-width: 768px) {
+  .welcome {
+    padding: 0 5%;
+  }
+  .welcome-content {
+    text-align: right;
+    padding-left: 80px;
+  }
+  .welcome-content h1 {
+    font-size: 2.5rem;
+  }
+  .welcome-content h3 {
+    font-size: 1.5rem;
+  }
+  .welcome-content p {
+    font-size: 1.3rem;
+  }
+  .welcome-img {
+    min-width: 150px;
+    min-height: 150px;
+  }
+  .btn {
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
   }
 }
