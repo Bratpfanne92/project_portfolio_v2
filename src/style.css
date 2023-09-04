@@ -299,13 +299,20 @@ body {
 /* Page 3-Projekte---------- */
 .list-container {
   width: 360px;
-  height: 300px;
+  height: 600px;
 }
 .list-container .list {
   margin-top: 20px;
-  height: 100px;
+  height: 120px;
   width: 100%;
   border: 10px solid var(--p-color-wh);
   outline: 20px solid var(--p-color-5);
+  border-radius: 35px;
+}
+.list-container > .list > .list-img {
+  width: 150px;
+  height: 100px;
+  outline: 3px solid var(--p-color-wh);
   border-radius: 25px;
+  background: url(../images/header_contact.jpg) no-repeat center/ cover;
 }
