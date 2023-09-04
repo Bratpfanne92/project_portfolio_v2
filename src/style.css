@@ -89,12 +89,13 @@ body {
 }
 .welcome-content h3 {
   font-size: 1.5rem;
-  /* Outline Border für h3 */
+  /* Outline Border für h3 ------------*/
   color: transparent;
   -webkit-text-stroke: 0.5px var(--p-color-wh);
-  /* Animation setup ffür h3 */
+  /* Animation setup ffür h3----------------- */
   background-image: linear-gradient(var(--p-color-4), var(--p-color-4));
   background-repeat: no-repeat;
+  /* Nur die Buchstabenhintergrund --- */
   -webkit-background-clip: text;
   background-position: -206px 0;
   animation: animatedH3 6s linear infinite;
