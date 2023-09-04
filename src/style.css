@@ -57,7 +57,7 @@ body {
     color: var(--p-color-4);
   }
 }
-/* Welcome immer leuchtet */
+/* Willkommen immer leuchtet */
 .navbar a.always-on {
   color: var(--p-color-4);
 }
@@ -92,7 +92,7 @@ body {
   font-size: 1.5rem;
   /* Outline Border für h3 ------------*/
   color: transparent;
-  -webkit-text-stroke: 0.5px var(--p-color-wh);
+  -webkit-text-stroke: 0.7px var(--p-color-wh);
   /* Animation setup ffür h3----------------- */
   background-image: linear-gradient(var(--p-color-4), var(--p-color-4));
   background-repeat: no-repeat;
@@ -225,5 +225,73 @@ body {
   .welcome-img {
     min-width: 250px;
     min-height: 250px;
+  }
+}
+
+/*Page 2: Uber Mich --------- */
+.welcome .h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  -webkit-text-stroke: 0.7px var(--p-color-wh);
+  color: var(--p-color-5);
+}
+.gallery-img {
+  width: 400px;
+  height: 300px;
+  border: 10px solid var(--p-color-wh);
+  outline: 20px solid var(--p-color-5);
+  border-radius: 25px;
+  background: url(/project_portfolio_v2/images/about_1.jpg) no-repeat center
+    top/ cover;
+  animation: animatedGallery 10s linear infinite;
+}
+@keyframes animatedGallery {
+  0%,
+  20% {
+    background: url(/project_portfolio_v2/images/about_2.jpg) no-repeat center
+      top/ cover;
+    background-position: -80px 0;
+  }
+  20%,
+  30% {
+    background: url(/project_portfolio_v2/images/about_2.jpg) no-repeat center
+      top/ cover;
+    background-position: -100px 0;
+  }
+  30%,
+  40% {
+    background: url(/project_portfolio_v2/images/about_3.jpg) no-repeat center
+      top/ cover;
+    background-position: 0 0;
+  }
+  40%,
+  50% {
+    background: url(/project_portfolio_v2/images/about_3.jpg) no-repeat center /
+      cover;
+    background-position: 0 0;
+  }
+  50%,
+  60% {
+    background: url(/project_portfolio_v2/images/about_4.jpg) no-repeat center
+      top/ cover;
+    background-position: -40px 0;
+  }
+  70%,
+  80% {
+    background: url(/project_portfolio_v2/images/about_5.jpg) no-repeat center
+      top/ cover;
+    background-position: 0 0;
+  }
+  80%,
+  90% {
+    background: url(/project_portfolio_v2/images/about_5.jpg) no-repeat center
+      top/ cover;
+    background-position: 0 0;
+  }
+  90%,
+  100% {
+    background: url(/project_portfolio_v2/images/about_1.jpg) no-repeat center
+      top/ cover;
+    background-position: -20px 0;
   }
 }
