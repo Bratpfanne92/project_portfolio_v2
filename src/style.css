@@ -245,6 +245,7 @@ body {
     top/ cover;
   animation: animatedGallery 20s linear infinite;
 }
+/* Animation für Gallery------------------- */
 @keyframes animatedGallery {
   0%,
   20% {
