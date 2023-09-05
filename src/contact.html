@@ -28,7 +28,7 @@
     <section class="welcome">
       <!-- <div class="welcome-img"></div> -->
       <h1 class="h1">Kontakt</h1>
-      <section class="content">
+      <section class="form-container">
         <section class="form">
           <form action="#" method="post">
             <input
@@ -64,16 +64,17 @@
               required
             />
             <br />
-            <input
+            <textarea
               type="textarea"
               name="textarea"
               id="textarea"
               placeholder="Nachricht..."
+              wrap="hard"
               required
-            />
+            ></textarea>
             <br />
             <input
-              class="btn"
+              class="btn btn-submit"
               type="submit"
               value="Nachricht senden"
               href="#"

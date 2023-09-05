@@ -331,7 +331,7 @@ body {
   text-align: left;
   margin: 10px;
 }
-/* Project Jump to Icon */
+/* Project "Jump to" Icon */
 .list-container .list > p > a {
   font-size: 1.2rem;
   color: var(--p-color-wh);
@@ -340,4 +340,32 @@ body {
   &:hover {
     color: var(--p-color-4);
   }
+}
+
+/*Page 4- Kontakt-------------------  */
+
+.form {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input:nth-of-type(1),
+input:nth-of-type(2),
+input:nth-of-type(3),
+input:nth-of-type(4) {
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+}
+textarea {
+  width: 229px;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+}
+.btn-submit {
+  margin-left: 50px;
+  margin-top: 20px;
+  /* padding: 5px 10px; */
 }
