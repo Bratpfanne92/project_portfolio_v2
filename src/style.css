@@ -308,11 +308,36 @@ body {
   border: 10px solid var(--p-color-wh);
   outline: 20px solid var(--p-color-5);
   border-radius: 35px;
+  display: grid;
+  grid-template-columns: 1fr 130px;
+  grid-template-rows: 1fr;
 }
+/* Project-Img */
 .list-container > .list > .list-img {
-  width: 150px;
+  width: 200px;
   height: 100px;
   outline: 3px solid var(--p-color-wh);
   border-radius: 25px;
   background: url(../images/header_contact.jpg) no-repeat center/ cover;
+}
+/* Project Info */
+.list-container > .list > p {
+  z-index: 0;
+  font-size: 0.9rem;
+  color: var(--p-color-hover1);
+  height: 80px;
+  grid-column: 2/2;
+  text-align: left;
+  margin: 10px;
+}
+/* Project Jump to Icon */
+.list-container .list > p > a {
+  font-size: 1.2rem;
+
+  color: var(--p-color-wh);
+  background: transparent;
+  transition: 0.3s;
+  &:hover {
+    color: var(--p-color-4);
+  }
 }
