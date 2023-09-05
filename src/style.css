@@ -25,9 +25,10 @@ body {
 }
 /* HEADER */
 .header {
+  z-index: 100;
   letter-spacing: 0.7px;
-  /* position: fixed; */
-  position: sticky;
+  position: fixed;
+  /* position: sticky; */
   display: flex;
   top: 0;
   left: 0;
