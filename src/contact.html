@@ -26,7 +26,8 @@
       </nav>
     </header>
     <section class="welcome">
-      <div class="welcome-img"></div>
+      <!-- <div class="welcome-img"></div> -->
+      <h1 class="h1">Kontakt</h1>
       <section class="content">
         <section class="form">
           <form action="#" method="post">
@@ -52,8 +53,15 @@
               name="telefonnumber"
               id="telefon"
               placeholder="Handynummer..."
-              required
               maxlength="11"
+            />
+            <br />
+            <input
+              type="textarea"
+              name="textarea"
+              id="textarea"
+              placeholder="Betreff..."
+              required
             />
             <br />
             <input
@@ -66,7 +74,7 @@
             <br />
             <input
               class="btn"
-              type="button"
+              type="submit"
               value="Nachricht senden"
               href="#"
             />

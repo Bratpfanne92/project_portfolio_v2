@@ -190,6 +190,7 @@ body {
     box-shadow: none;
     color: var(--p-color-4);
     background: var(--p-color-wh);
+    cursor: pointer;
   }
 }
 /* Responsive -------- */
