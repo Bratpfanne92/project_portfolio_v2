@@ -2,4 +2,4 @@
 
 ## First public version of project_portfolio_v2
 
-### project_portfolio_v2_1.0
+### project_portfolio_v2 1.0
